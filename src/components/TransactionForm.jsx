@@ -85,6 +85,7 @@ const TransactionForm = ({ onTransactionSaved, initialData, onCancelEdit }) => {
               className="w-full bg-gray-50 border border-gray-200 text-gray-900 rounded-lg pl-10 p-2.5 focus:bg-white focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all outline-none"
               placeholder="0"
               min="1"
+              max="1000000000000"
               step="1"
               required
             />
@@ -99,6 +100,7 @@ const TransactionForm = ({ onTransactionSaved, initialData, onCancelEdit }) => {
             onChange={(e) => setDescription(e.target.value)}
             className="w-full bg-gray-50 border border-gray-200 text-gray-900 rounded-lg p-2.5 focus:bg-white focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all outline-none"
             placeholder="What was this for?"
+            maxLength="50"
             required
           />
         </div>
